@@ -6,12 +6,28 @@ import home from './img/home.svg'
 import left from './img/left.svg'
 import right from './img/right.svg'
 import './App.css';
-import Buttonhouter from './component/button';
+import { Buttonhouter, TextHouter } from './component/smallcomponent'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <TextHouter
+          text="Test Text"
+          fontstyle='text-sm'
+        />
+        <TextHouter
+          text="Test Text2"
+          fontstyle='text-lg'
+        />
+        <TextHouter
+          text="Test Text2"
+          fontstyle='text-lg'
+        />
+        <TextHouter
+          text="Test Text3"
+          fontstyle='text-base font-bold'
+        />
         <Buttonhouter
           img={star}
           text='Test Button'
@@ -19,8 +35,6 @@ function App() {
           iconPosition='right'
           textColor='text-white-600'
           bakcgroundColor=''
-          hovertrue= {true}
-          hoverimg='null'
           hovercolor= 'bg-orange-200'
         />
         <Buttonhouter
@@ -30,8 +44,6 @@ function App() {
           iconPosition='left'
           textColor='text-red-600'
           bakcgroundColor='bg-red-100'
-          hovertrue= {false}
-          hoverimg='null'
           hovercolor= ''
         />
         <Buttonhouter
@@ -41,8 +53,6 @@ function App() {
           iconPosition='left'
           textColor='text-white-600'
           bakcgroundColor=''
-          hovertrue= {true}
-          hoverimg='null'
           hovercolor= 'bg-orange-200'
         />
         <Buttonhouter
@@ -52,8 +62,6 @@ function App() {
           iconPosition=''
           textColor='text-white-600'
           bakcgroundColor=''
-          hovertrue= {true}
-          hoverimg='null'
           hovercolor= 'bg-orange-200'
         />
         <Buttonhouter
@@ -63,8 +71,6 @@ function App() {
           iconPosition='right'
           textColor='text-white-600'
           bakcgroundColor='bg-emerald-500'
-          hovertrue= {true}
-          hoverimg='null'
           hovercolor= 'bg-orange-200'
         />
         <Buttonhouter
@@ -74,8 +80,6 @@ function App() {
           iconPosition=''
           textColor='text-white-600'
           bakcgroundColor=''
-          hovertrue= {true}
-          hoverimg='null'
           hovercolor= 'bg-orange-200'
         />
         <img src={logo} className="App-logo" alt="logo" />

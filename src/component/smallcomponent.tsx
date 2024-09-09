@@ -7,14 +7,16 @@ interface ButtonProps {
     iconPosition: string;
     textColor: string;
     bakcgroundColor: string;
-    hovertrue: boolean;
-    hoverimg: string;
     hovercolor: string;
     // onclick: (() => {})
 }
 
+interface TextProps {
+    text: string;
+    fontstyle: string
+}
 
-function Buttonhouter({ img, text, disabled, iconPosition, textColor, bakcgroundColor, hovertrue, hoverimg, hovercolor }: Readonly<ButtonProps>) {
+function Buttonhouter({ img, text, disabled, iconPosition, textColor, bakcgroundColor, hovercolor }: Readonly<ButtonProps>) {
     let ComponentInside;
 
     if (img === 'null') {
@@ -35,11 +37,17 @@ function Buttonhouter({ img, text, disabled, iconPosition, textColor, bakcground
         </>
     }
 
-    let styling = `flex justify-between text-sm border-2 border-${textColor}-400 ${bakcgroundColor === '' ? '' : bakcgroundColor} ${textColor} p-2 rounded-full mb-2 hover:bg-red-100`
+    let styling = `flex justify-between text-sm border-2 border-${textColor}-400 ${bakcgroundColor === '' ? '' : bakcgroundColor} ${textColor} p-2 rounded-full mb-2 hover:${hovercolor}`
 
     return (
         <div className={styling}>{ComponentInside}</div>
     )
 }
 
-export default Buttonhouter
+function TextHouter ({ text, fontstyle }: Readonly<TextProps>) {
+    return (
+        <p className={`${fontstyle}`}>{text}</p>
+    )
+}
+
+export {Buttonhouter, TextHouter}
