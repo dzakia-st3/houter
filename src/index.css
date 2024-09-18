@@ -25,3 +25,13 @@ textarea:focus,
 input:focus {
   outline: none;
 }
+
+.scroll-container {
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}

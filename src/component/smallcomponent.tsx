@@ -43,7 +43,7 @@ function Buttonhouter({ img, text, disabled, iconPosition, textColor, bakcground
         </>
     }
 
-    let styling = `flex justify-between text-sm border-2 border-${textColor}-400 ${bakcgroundColor === '' ? '' : bakcgroundColor} ${textColor} p-2 rounded-full ${hovercolor}`
+    let styling = `flex justify-between text-sm border-2 border-slate-50 ${bakcgroundColor === '' ? '' : bakcgroundColor} ${textColor} p-2 rounded-full ${hovercolor}`
 
     return (
         <div className={styling}>{ComponentInside}</div>
@@ -58,8 +58,8 @@ function TextHouter ({ text, fontstyle }: Readonly<TextProps>) {
 
 function MiniCard ({listimageandstyle, texttop, textbottom} : Readonly<MiniCardProps> ) {
     return (
-        <div className="flex-auto mr-4">
-            <div className="flex items-center justify-center bg-white rounded-3xl p-4">
+        <div className="flex-none mr-4">
+            <div className="flex items-center justify-center bg-white rounded-3xl p-4 h-24">
                 <div className='flex mr-2'>
                     {
                         listimageandstyle.map( (item: any) => <img src={`${item.img}`} className={item.style} alt="" />)
