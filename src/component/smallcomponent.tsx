@@ -58,7 +58,7 @@ function TextHouter ({ text, fontstyle }: Readonly<TextProps>) {
 
 function MiniCard ({listimageandstyle, texttop, textbottom} : Readonly<MiniCardProps> ) {
     return (
-        <div className="flex-none mr-4">
+        <div className="flex-none">
             <div className="flex items-center justify-center bg-white rounded-3xl p-4 h-24">
                 <div className='flex mr-2'>
                     {

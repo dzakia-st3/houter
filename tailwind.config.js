@@ -4,13 +4,13 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        "loop-scroll": "loop-scroll 8s linear infinite"
+        "loop-scroll": "loop-scroll 30s linear infinite",
       },
       keyframes: {
         "loop-scroll": {
-          from: { transform: "translateX(5%)" },
+          from: { transform: "translateX(0%)" },
           to: { transform: "translateX(-37%)" }
-        }
+        },
       }
     },
   },
