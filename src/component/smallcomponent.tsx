@@ -26,24 +26,24 @@ function Buttonhouter({ img, text, disabled, iconPosition, textColor, bakcground
     let ComponentInside;
 
     if (img === 'null') {
-        ComponentInside = <button className="mx-1" disabled={disabled}>{text}</button>
+        ComponentInside = <button className="mx-1 font-lexend" disabled={disabled}>{text}</button>
     } else if (text === 'null') {
         ComponentInside = <img className = 'size-4 mx-1' src={img} alt='icon' />
     } else if (iconPosition.toLowerCase() === 'right') {
         ComponentInside = 
             <>
-                <button className="mx-1" disabled={disabled}>{text}</button>
+                <button className="mx-1 font-lexend" disabled={disabled}>{text}</button>
                 <img className = 'size-4 mx-1' src={img} alt='icon' />
             </>
     } else if (iconPosition.toLowerCase() === 'left') {
         ComponentInside = 
         <>
             <img className = 'size-4 mx-1' src={img} alt='icon' />
-            <button className="mx-1" disabled={disabled}>{text}</button>
+            <button className="font-lexend" disabled={disabled}>{text}</button>
         </>
     }
 
-    let styling = `flex justify-between text-sm border-2 border-slate-50 ${bakcgroundColor === '' ? '' : bakcgroundColor} ${textColor} p-2 rounded-full ${hovercolor}`
+    let styling = `flex justify-between text-sm border-2 border-gray-200 ${bakcgroundColor === '' ? '' : bakcgroundColor} ${textColor} p-2 rounded-full ${hovercolor}`
 
     return (
         <div className={styling}>{ComponentInside}</div>
