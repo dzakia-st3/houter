@@ -27,6 +27,7 @@ import tableimg from './img/table.svg'
 import sofa from './img/sofa.svg'
 import chair from './img/chair.svg'
 import playbtn from './img/play btn.svg'
+import star from './img/star.png'
 import './App.css';
 import { Buttonhouter, TextHouter, MiniCard, MiniLGCard, MiniSMCard } from './component/smallcomponent'
 import { Navbar } from './component/NavbarFooter';
@@ -1084,6 +1085,47 @@ function App() {
                         <img src={sofa} className='h-40 w-auto' alt="" />
                         <img src={tableimg} className='h-20 w-auto' alt="" />
                         <img src={chair} className='h-20 w-auto' alt="" />
+                    </div>
+                </div>
+            </div>
+            <div className='section-4 py-12'>
+                <div className='p-10 flex flex-col items-center justify-center'>
+                    <img src={line} className='mb-2' alt="" />
+                    <TextHouter
+                        text='Ready To Sell'
+                        fontstyle="font-lexend text-base text-[#F59E0B]"
+                    />
+                    <TextHouter
+                        text="What Our User Say About Us"
+                        fontstyle="mt-2 font-bold font-lexend text-xl text-[#1b1c57]"
+                    />
+                </div>
+                <div className='flex items-center justify-center'>
+                    <div className="relative w-3/5 h-96 rounded-lg bg-[url('./img/section4&5_house1.svg')] bg-cover shadow-md shadow-slate-400 p-28">
+                        <div className='absolute bg-white p-10 rounded-lg -bottom-32 right-20 left-20 shadow-md shadow-slate-400'>
+                            <TextHouter
+                                text="My house sold out fast!"
+                                fontstyle="font-bold font-lexend text-base text-[#1b1c57]"
+                            />
+                            <TextHouter
+                                text="I was finally able to sell my house quickly through Hounter by immediately setting me up with people who wanted my house. I also do not get a discount from the sale of my house. Awesome!"
+                                fontstyle="mt-2 font-lexend text-sm text-gray-400"
+                            />
+                            <div className="flex items-center justify-between mt-4">
+                                <MiniSMCard
+                                    img={profil2}
+                                    name="Courtney Henry"
+                                    info="CEO Andarafish"
+                                />
+                                <div className="flex items-center space-x-2">
+                                    <img src={star} alt="" />
+                                    <TextHouter
+                                        text="4.3"
+                                        fontstyle="font-lexend font-bold text-base text-gray-400"
+                                    />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

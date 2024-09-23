@@ -99,7 +99,7 @@ function MiniLGCard({ img, text }: Readonly<MiniLGCardProps>) {
 
 function MiniSMCard({img, name, info} : Readonly<MiniSMCardProps>) {
     return (
-        <div className="flex space-x-2 items-center p-2">
+        <div className="flex space-x-2 items-center">
             <div className='flex'>
                 <img src={img} className='w-14 h-14' alt="" />
             </div>
