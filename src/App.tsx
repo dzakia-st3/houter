@@ -1100,7 +1100,59 @@ function App() {
                         fontstyle="mt-2 font-bold font-lexend text-xl text-[#1b1c57]"
                     />
                 </div>
-                <div className='flex items-center justify-center'>
+                <div className='flex items-center justify-center space-x-10'>
+                    <div className="relative w-3/5 h-96 rounded-lg bg-[url('./img/section4&5_house1.svg')] bg-cover shadow-md shadow-slate-400 p-28">
+                        <div className='absolute bg-white p-10 rounded-lg -bottom-32 right-20 left-20 shadow-md shadow-slate-400'>
+                            <TextHouter
+                                text="My house sold out fast!"
+                                fontstyle="font-bold font-lexend text-base text-[#1b1c57]"
+                            />
+                            <TextHouter
+                                text="I was finally able to sell my house quickly through Hounter by immediately setting me up with people who wanted my house. I also do not get a discount from the sale of my house. Awesome!"
+                                fontstyle="mt-2 font-lexend text-sm text-gray-400"
+                            />
+                            <div className="flex items-center justify-between mt-4">
+                                <MiniSMCard
+                                    img={profil2}
+                                    name="Courtney Henry"
+                                    info="CEO Andarafish"
+                                />
+                                <div className="flex items-center space-x-2">
+                                    <img src={star} alt="" />
+                                    <TextHouter
+                                        text="4.3"
+                                        fontstyle="font-lexend font-bold text-base text-gray-400"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="relative w-3/5 h-96 rounded-lg bg-[url('./img/section4&5_house1.svg')] bg-cover shadow-md shadow-slate-400 p-28">
+                        <div className='absolute bg-white p-10 rounded-lg -bottom-32 right-20 left-20 shadow-md shadow-slate-400'>
+                            <TextHouter
+                                text="My house sold out fast!"
+                                fontstyle="font-bold font-lexend text-base text-[#1b1c57]"
+                            />
+                            <TextHouter
+                                text="I was finally able to sell my house quickly through Hounter by immediately setting me up with people who wanted my house. I also do not get a discount from the sale of my house. Awesome!"
+                                fontstyle="mt-2 font-lexend text-sm text-gray-400"
+                            />
+                            <div className="flex items-center justify-between mt-4">
+                                <MiniSMCard
+                                    img={profil2}
+                                    name="Courtney Henry"
+                                    info="CEO Andarafish"
+                                />
+                                <div className="flex items-center space-x-2">
+                                    <img src={star} alt="" />
+                                    <TextHouter
+                                        text="4.3"
+                                        fontstyle="font-lexend font-bold text-base text-gray-400"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className="relative w-3/5 h-96 rounded-lg bg-[url('./img/section4&5_house1.svg')] bg-cover shadow-md shadow-slate-400 p-28">
                         <div className='absolute bg-white p-10 rounded-lg -bottom-32 right-20 left-20 shadow-md shadow-slate-400'>
                             <TextHouter
