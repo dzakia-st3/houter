@@ -31,7 +31,6 @@ import star from './img/star.png'
 import './App.css';
 import { Buttonhouter, TextHouter, MiniCard, MiniLGCard, MiniSMCard } from './component/smallcomponent'
 import { Navbar } from './component/NavbarFooter';
-import { table } from 'console';
 
 function App() {
     let dataimage1 = [
@@ -1100,81 +1099,87 @@ function App() {
                         fontstyle="mt-2 font-bold font-lexend text-xl text-[#1b1c57]"
                     />
                 </div>
-                <div className='flex items-center justify-center space-x-10'>
-                    <div className="relative w-3/5 h-96 rounded-lg bg-[url('./img/section4&5_house1.svg')] bg-cover shadow-md shadow-slate-400 p-28">
-                        <div className='absolute bg-white p-10 rounded-lg -bottom-32 right-20 left-20 shadow-md shadow-slate-400'>
-                            <TextHouter
-                                text="My house sold out fast!"
-                                fontstyle="font-bold font-lexend text-base text-[#1b1c57]"
-                            />
-                            <TextHouter
-                                text="I was finally able to sell my house quickly through Hounter by immediately setting me up with people who wanted my house. I also do not get a discount from the sale of my house. Awesome!"
-                                fontstyle="mt-2 font-lexend text-sm text-gray-400"
-                            />
-                            <div className="flex items-center justify-between mt-4">
-                                <MiniSMCard
-                                    img={profil2}
-                                    name="Courtney Henry"
-                                    info="CEO Andarafish"
+                <div className='flex items-center space-x-10 overflow-x-auto scroll-container'>
+                    <div className='h-[33rem]'>
+                        <div className="relative flex-none w-[55rem] h-96 rounded-xl bg-[url('./img/section4&5_house1.svg')] bg-opacity-75 bg-cover shadow-md shadow-slate-400 p-28">
+                            <div className='absolute bg-white p-10 rounded-lg -bottom-32 right-20 left-20 shadow-md shadow-slate-400'>
+                                <TextHouter
+                                    text="My house sold out fast!"
+                                    fontstyle="font-bold font-lexend text-base text-[#1b1c57]"
                                 />
-                                <div className="flex items-center space-x-2">
-                                    <img src={star} alt="" />
-                                    <TextHouter
-                                        text="4.3"
-                                        fontstyle="font-lexend font-bold text-base text-gray-400"
+                                <TextHouter
+                                    text="I was finally able to sell my house quickly through Hounter by immediately setting me up with people who wanted my house. I also do not get a discount from the sale of my house. Awesome!"
+                                    fontstyle="mt-2 font-lexend text-sm text-gray-500"
+                                />
+                                <div className="flex items-center justify-between mt-4">
+                                    <MiniSMCard
+                                        img={profil2}
+                                        name="Courtney Henry"
+                                        info="CEO Andarafish"
                                     />
+                                    <div className="flex items-center space-x-2">
+                                        <img src={star} alt="" />
+                                        <TextHouter
+                                            text="4.3"
+                                            fontstyle="font-lexend font-bold text-base text-gray-500"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="relative w-3/5 h-96 rounded-lg bg-[url('./img/section4&5_house1.svg')] bg-cover shadow-md shadow-slate-400 p-28">
-                        <div className='absolute bg-white p-10 rounded-lg -bottom-32 right-20 left-20 shadow-md shadow-slate-400'>
-                            <TextHouter
-                                text="My house sold out fast!"
-                                fontstyle="font-bold font-lexend text-base text-[#1b1c57]"
-                            />
-                            <TextHouter
-                                text="I was finally able to sell my house quickly through Hounter by immediately setting me up with people who wanted my house. I also do not get a discount from the sale of my house. Awesome!"
-                                fontstyle="mt-2 font-lexend text-sm text-gray-400"
-                            />
-                            <div className="flex items-center justify-between mt-4">
-                                <MiniSMCard
-                                    img={profil2}
-                                    name="Courtney Henry"
-                                    info="CEO Andarafish"
+                    <div className='h-[33rem]'>
+                        <div className="relative flex-none w-[55rem] h-96 rounded-xl bg-[url('./img/section4_house2.svg')] bg-cover shadow-md shadow-slate-400 p-28">
+                            <div className='absolute bg-white p-10 rounded-lg -bottom-32 right-20 left-20 shadow-md shadow-slate-400'>
+                                <TextHouter
+                                    text="Best! I got the house I wanted through Hounter"
+                                    fontstyle="font-bold font-lexend text-base text-[#1b1c57]"
                                 />
-                                <div className="flex items-center space-x-2">
-                                    <img src={star} alt="" />
-                                    <TextHouter
-                                        text="4.3"
-                                        fontstyle="font-lexend font-bold text-base text-gray-400"
+                                <TextHouter
+                                    text="Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want."
+                                    fontstyle="mt-2 font-lexend text-sm text-gray-500"
+                                />
+                                <div className="flex items-center justify-between mt-4">
+                                    <MiniSMCard
+                                        img={profil1}
+                                        name="Dianne Russell"
+                                        info="Manager Director"
                                     />
+                                    <div className="flex items-center space-x-2">
+                                        <img src={star} alt="" />
+                                        <TextHouter
+                                            text="4.6"
+                                            fontstyle="font-lexend font-bold text-base text-gray-500"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="relative w-3/5 h-96 rounded-lg bg-[url('./img/section4&5_house1.svg')] bg-cover shadow-md shadow-slate-400 p-28">
-                        <div className='absolute bg-white p-10 rounded-lg -bottom-32 right-20 left-20 shadow-md shadow-slate-400'>
-                            <TextHouter
-                                text="My house sold out fast!"
-                                fontstyle="font-bold font-lexend text-base text-[#1b1c57]"
-                            />
-                            <TextHouter
-                                text="I was finally able to sell my house quickly through Hounter by immediately setting me up with people who wanted my house. I also do not get a discount from the sale of my house. Awesome!"
-                                fontstyle="mt-2 font-lexend text-sm text-gray-400"
-                            />
-                            <div className="flex items-center justify-between mt-4">
-                                <MiniSMCard
-                                    img={profil2}
-                                    name="Courtney Henry"
-                                    info="CEO Andarafish"
+                    <div className='h-[33rem]'>
+                        <div className="relative flex-none w-[55rem] h-96 rounded-xl bg-[url('./img/section4&5_house3.svg')] bg-cover shadow-md shadow-slate-400 p-28">
+                            <div className='absolute bg-white p-10 rounded-lg -bottom-32 right-20 left-20 shadow-md shadow-slate-400'>
+                                <TextHouter
+                                    text="Through the Hounter, I can get a house for my self"
+                                    fontstyle="font-bold font-lexend text-base text-[#1b1c57]"
                                 />
-                                <div className="flex items-center space-x-2">
-                                    <img src={star} alt="" />
-                                    <TextHouter
-                                        text="4.3"
-                                        fontstyle="font-lexend font-bold text-base text-gray-400"
+                                <TextHouter
+                                    text="By looking for information about what kind of house we want, we managed to get the house we wanted very quickly, and directly connected with the seller to be able to ask about the details, very helpful!"
+                                    fontstyle="mt-2 font-lexend text-sm text-gray-500"
+                                />
+                                <div className="flex items-center justify-between mt-4">
+                                    <MiniSMCard
+                                        img={profil3}
+                                        name="Esther Howard"
+                                        info="Head of Marketing"
                                     />
+                                    <div className="flex items-center space-x-2">
+                                        <img src={star} alt="" />
+                                        <TextHouter
+                                            text="4.5"
+                                            fontstyle="font-lexend font-bold text-base text-gray-500"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -73,7 +73,7 @@ function MiniCard({ listimageandstyle, texttop, textbottom }: Readonly<MiniCardP
             <div className="flex items-center justify-center bg-white rounded-3xl p-4 h-24">
                 <div className='flex mr-2'>
                     {
-                        listimageandstyle.map((item: any) => <img src={`${item.img}`} className={item.style} alt="" />)
+                        listimageandstyle.map((item: any, idx:number) => <img key={idx+1} src={`${item.img}`} className={item.style} alt="" />)
                     }
                 </div>
                 <div className=''>
@@ -105,7 +105,7 @@ function MiniSMCard({img, name, info} : Readonly<MiniSMCardProps>) {
             </div>
             <div>
                 <p className="font-bold font-lexend text-base text-[#1b1c57]">{name}</p>
-                <p className="font-lexend text-base text-gray-400">{info}</p>
+                <p className="font-lexend text-base text-gray-500">{info}</p>
             </div>
         </div>
     )
