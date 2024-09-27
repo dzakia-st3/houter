@@ -33,6 +33,11 @@ import house5_1 from './img/section5_house1.svg'
 import house5_2 from './img/section5_house2.svg'
 import house5_3 from './img/section4&5_house3.svg'
 import house5_4 from './img/section4&5_house1.svg'
+import email from './img/email.svg'
+import chair1 from './img/section6_chair.svg'
+import chair2 from './img/section6_chair2.svg'
+import house6_1 from './img/section6_house1.svg'
+import house6_2 from './img/section6_house2.svg'
 import './App.css';
 import { Buttonhouter, TextHouter, MiniCard, MiniLGCard, MiniSMCard, MiniCardSection5 } from './component/smallcomponent'
 import { Navbar } from './component/NavbarFooter';
@@ -1215,21 +1220,21 @@ function App() {
                     <div className='w-1/2'>
                         <MiniCardSection5
                             imgHouse={house5_1}
-                            imgProfil={profil1} 
+                            imgProfil={profil1}
                             name="Dianne Russell"
                             title="The Things We Need To Check When We Want To Buy A House"
                             info="4 min read | 25 Apr 2021"
                         />
                         <MiniCardSection5
                             imgHouse={house5_2}
-                            imgProfil={profil2} 
+                            imgProfil={profil2}
                             name="Courtney Henry"
                             title="7 Ways To Distinguish The Quality Of The House We Want To Buy"
                             info="6 min read | 24 Apr 2021"
                         />
                         <MiniCardSection5
                             imgHouse={house5_3}
-                            imgProfil={profil2} 
+                            imgProfil={profil2}
                             name="Darlene Robertson"
                             title="The Best Way To Know The Quality Of The House We Want To Buy"
                             info="2 min read | 24 Apr 2021"
@@ -1248,6 +1253,55 @@ function App() {
                                 <img src={clock} className='mr-2' alt="" />
                                 <p className="font-lexend text-sm text-gray-400">8 min read | 25 Apr 2021</p>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='section-6 py-12 w-full h-60 p-16'>
+                <div className='bg-gradient-to-r from-[#8ab4fa] via-white to-[#8ab4fa] flex justify-between items-center p-10 rounded-lg'>
+                    <div className='flex items-center'>
+                        <div className='space-y-8'>
+                            <img src={chair1} alt="" />
+                            <img src={profil1} className='w-12 h-12 ml-4' alt="" />
+                        </div>
+                        <div className='ml-10'>
+                            <img src={profil2} className='w-12 h-12 mt-20 mb-10' alt="" />
+                            <img src={house6_1} alt="" />
+                        </div>
+                    </div>
+                    <div className="space-y-4 w-2/4">
+                        <TextHouter
+                            text='Subscribe For More Info'
+                            fontstyle="font-lexend font-bold text-2xl text-center text-[#1b1c57]"
+                        />
+                        <TextHouter
+                            text='And Update From Hounter'
+                            fontstyle="font-lexend font-bold text-2xl text-center text-[#1b1c57]"
+                        />
+                        <div className='flex items-center justify-between p-2 w-full border-solid border-2 border-gray-400 rounded-full'>
+                            <div className='flex items-center'>
+                                <img src={email} alt="" />
+                                <input type="text" placeholder='Your email here' className='mx-2 px-2 w-full' />
+                            </div>
+                            <Buttonhouter
+                                img="null"
+                                text="Subscribe Now"
+                                disabled={false}
+                                iconPosition=""
+                                textColor="text-white"
+                                bakcgroundColor='bg-[#10B981]'
+                                hovercolor='hover:bg-emerald-400'
+                            />
+                        </div>
+                    </div>
+                    <div className='flex items-center'>
+                        <div className='space-y-8'>
+                            <img src={house6_2} className='mt-20' alt="" />
+                            <img src={profil2} className='w-12 h-12 ml-4' alt="" />
+                        </div>
+                        <div className='ml-10'>
+                            <img src={profil1} className='w-12 h-12 mb-10' alt="" />
+                            <img src={chair2} alt="" />
                         </div>
                     </div>
                 </div>
