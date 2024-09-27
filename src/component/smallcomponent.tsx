@@ -1,4 +1,5 @@
 import React from "react";
+import clock from "../img/clock.svg"
 
 interface ButtonProps {
     img: string;
@@ -30,6 +31,14 @@ interface MiniLGCardProps {
 interface MiniSMCardProps {
     img: string;
     name: string;
+    info: string;
+}
+
+interface MiniCardSection5Props {
+    imgHouse: string;
+    imgProfil: string;
+    name: string; 
+    title: string;
     info: string;
 }
 
@@ -73,7 +82,7 @@ function MiniCard({ listimageandstyle, texttop, textbottom }: Readonly<MiniCardP
             <div className="flex items-center justify-center bg-white rounded-3xl p-4 h-24">
                 <div className='flex mr-2'>
                     {
-                        listimageandstyle.map((item: any, idx:number) => <img key={idx+1} src={`${item.img}`} className={item.style} alt="" />)
+                        listimageandstyle.map((item: any, idx: number) => <img key={idx + 1} src={`${item.img}`} className={item.style} alt="" />)
                     }
                 </div>
                 <div className=''>
@@ -97,7 +106,7 @@ function MiniLGCard({ img, text }: Readonly<MiniLGCardProps>) {
     )
 }
 
-function MiniSMCard({img, name, info} : Readonly<MiniSMCardProps>) {
+function MiniSMCard({ img, name, info }: Readonly<MiniSMCardProps>) {
     return (
         <div className="flex space-x-2 items-center">
             <div className='flex'>
@@ -111,4 +120,23 @@ function MiniSMCard({img, name, info} : Readonly<MiniSMCardProps>) {
     )
 }
 
-export { Buttonhouter, TextHouter, MiniCard, MiniLGCard, MiniSMCard}
+function MiniCardSection5({imgHouse, imgProfil, name, title, info} : Readonly<MiniCardSection5Props>) {
+    return (
+        <div className='flex'>
+            <img src={imgHouse} alt="" />
+            <div className='flex-col p-5 space-y-5'>
+                <div className="flex items-center">
+                    <img src={imgProfil} className='w-8 h-8 mr-2' alt="" />
+                    <p className="font-lexend text-sm text-gray-500">{name}</p>
+                </div>
+                <p className="font-bold font-lexend text-base text-[#1b1c57]">{title}</p>
+                <div className="flex">
+                    <img src={clock} className='mr-2' alt="" />
+                    <p className="font-lexend text-sm text-gray-400">{info}</p>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export { Buttonhouter, TextHouter, MiniCard, MiniLGCard, MiniSMCard, MiniCardSection5}
