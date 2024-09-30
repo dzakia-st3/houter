@@ -40,7 +40,7 @@ import house6_1 from './img/section6_house1.svg'
 import house6_2 from './img/section6_house2.svg'
 import './App.css';
 import { Buttonhouter, TextHouter, MiniCard, MiniLGCard, MiniSMCard, MiniCardSection5 } from './component/smallcomponent'
-import { Navbar } from './component/NavbarFooter';
+import { Navbar, Footer } from './component/NavbarFooter';
 
 function App() {
     let dataimage1 = [
@@ -1257,7 +1257,7 @@ function App() {
                     </div>
                 </div>
             </div>
-            <div className='section-6 py-12 w-full h-60 p-16'>
+             <div className='section-6 py-12 w-full p-16'>
                 <div className='bg-gradient-to-r from-[#8ab4fa] via-white to-[#8ab4fa] flex justify-between items-center p-10 rounded-lg'>
                     <div className='flex items-center'>
                         <div className='space-y-8'>
@@ -1306,6 +1306,7 @@ function App() {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </>
     )
 }

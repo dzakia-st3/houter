@@ -1,6 +1,9 @@
 import React from "react";
 import logohouter from "../img/logo_houter.svg"
 import down from "../img/down.svg"
+import fb from "../img/fb.svg"
+import twitter from "../img/twitter.svg"
+import ig from "../img/ig.svg"
 import { Buttonhouter, TextHouter } from "./smallcomponent";
 
 function Navbar() {
@@ -59,7 +62,86 @@ function Navbar() {
 
 function Footer() {
     return (
-        <p>WORLD !!!!</p>
+        <div className="flex justify-between items-start p-16">
+            <div className="space-y-4 w-1/3">
+                <div className="flex items-center">
+                    <img src={logohouter} className="mr-3" alt="" />
+                    <TextHouter
+                        text="Hounter"
+                        fontstyle="font-bold font-lexend text-base text-[#1b1c57]"
+                    />
+                </div>
+                <TextHouter
+                    text="We provide information about properties such as houses, villas and apartments to help people find their dream home"
+                    fontstyle="font-lexend text-sm text-gray-500"
+                />
+                <div className="flex space-x-4">
+                    <img src={fb} alt="" />
+                    <img src={twitter} alt="" />
+                    <img src={ig} alt="" />
+                </div>
+            </div>
+            <div className="flex justify-around w-2/3">
+                <div className="space-y-3">
+                    <TextHouter
+                        text="Property"
+                        fontstyle="font-bold font-lexend text-base text-[#1b1c57]"
+                    />
+                    <TextHouter
+                        text="House"
+                        fontstyle="font-lexend text-sm text-gray-500"
+                    />
+                    <TextHouter
+                        text="Apartment"
+                        fontstyle="font-lexend text-sm text-gray-500"
+                    />
+                    <TextHouter
+                        text="Vila"
+                        fontstyle="font-lexend text-sm text-gray-500"
+                    />
+                </div>
+                <div className="space-y-3">
+                    <TextHouter
+                        text="Article"
+                        fontstyle="font-bold font-lexend text-base text-[#1b1c57]"
+                    />
+                    <TextHouter
+                        text="New Article"
+                        fontstyle="font-lexend text-sm text-gray-500"
+                    />
+                    <TextHouter
+                        text="Popular Article"
+                        fontstyle="font-lexend text-sm text-gray-500"
+                    />
+                    <TextHouter
+                        text="Most Read"
+                        fontstyle="font-lexend text-sm text-gray-500"
+                    />
+                    <TextHouter
+                        text="Tips & Tricks"
+                        fontstyle="font-lexend text-sm text-gray-500"
+                    />
+                </div>
+                <div className="space-y-3">
+                    <TextHouter
+                        text="Contact"
+                        fontstyle="font-bold font-lexend text-base text-[#1b1c57]"
+                    />
+                    <TextHouter
+                        text="2464 Royal Ln. Mesa, New Jersey 45463"
+                        fontstyle="font-lexend text-sm text-gray-500"
+                    />
+                    <TextHouter
+                        text="(671) 555-0110"
+                        fontstyle="font-lexend text-sm text-gray-500"
+                    />
+                    <TextHouter
+                        text="info@hounter.com"
+                        fontstyle="font-lexend text-sm text-gray-500"
+                    />
+                </div>
+            </div>
+        </div>
     )
 }
 
