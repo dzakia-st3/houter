@@ -38,3 +38,8 @@ input:focus {
 .scroll-container::-webkit-scrollbar {
   display: none;
 }
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
