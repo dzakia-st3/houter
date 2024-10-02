@@ -16,9 +16,9 @@ import { Buttonhouter, TextHouter } from '../component/smallcomponent'
 export default function Section2() {
     return (
         <div className='section-2'>
-            <div className='flex items-center justify-around w-full my-16'>
+            <div className='flex flex-col items-center justify-center space-y-5 md:flex-row md:justify-around w-full my-12 md:my-16'>
                 <div>
-                    <div className='flex space-x-2'>
+                    <div className='flex flex-col-reverse space-x-0 md:flex-row md:space-x-2'>
                         <img src={line} alt="" />
                         <TextHouter
                             text='Our Recomendation'
@@ -60,9 +60,9 @@ export default function Section2() {
                     />
                 </div>
             </div>
-            <div className='flex items-center space-x-12 m-16 overflow-x-auto scroll-container'>
+            <div className='flex items-center space-x-12 p-12 md:p-16 overflow-x-auto scroll-container'>
                 <div>
-                    <div className="w-52 h-60 rounded-2xl bg-[url('./img/home1.svg')] flex justify-start bg-cover items-end p-2">
+                    <div className="w-96 h-96 md:w-52 md:h-60 rounded-2xl bg-[url('./img/home1.svg')] flex justify-start bg-cover items-end p-2">
                         <Buttonhouter
                             img={fire}
                             text="Popular"
@@ -94,7 +94,7 @@ export default function Section2() {
                     </div>
                 </div>
                 <div>
-                    <div className="w-52 h-60 rounded-2xl bg-[url('./img/home2.svg')] flex justify-start bg-cover items-end p-2">
+                    <div className="w-96 h-96 md:w-52 md:h-60 rounded-2xl bg-[url('./img/home2.svg')] flex justify-start bg-cover items-end p-2">
                         <Buttonhouter
                             img={homeblue}
                             text="New House"
@@ -126,7 +126,7 @@ export default function Section2() {
                     </div>
                 </div>
                 <div>
-                    <div className="w-52 h-60 rounded-2xl bg-[url('./img/home3.svg')] flex justify-start bg-cover items-end p-2">
+                    <div className="w-96 h-96 md:w-52 md:h-60 rounded-2xl bg-[url('./img/home3.svg')] flex justify-start bg-cover items-end p-2">
                         <Buttonhouter
                             img={wallet}
                             text="Best Deals"
@@ -158,7 +158,7 @@ export default function Section2() {
                     </div>
                 </div>
                 <div>
-                    <div className="w-52 h-60 rounded-2xl bg-[url('./img/home4.svg')] flex justify-start bg-cover items-end p-2">
+                    <div className="w-96 h-96 md:w-52 md:h-60 rounded-2xl bg-[url('./img/home4.svg')] flex justify-start bg-cover items-end p-2">
                         <Buttonhouter
                             img={fire}
                             text="Popular"
@@ -190,7 +190,7 @@ export default function Section2() {
                     </div>
                 </div>
                 <div>
-                    <div className="w-52 h-60 rounded-2xl bg-[url('./img/home1.svg')] flex justify-start bg-cover items-end p-2">
+                    <div className="w-96 h-96 md:w-52 md:h-60 rounded-2xl bg-[url('./img/home1.svg')] flex justify-start bg-cover items-end p-2">
                         <Buttonhouter
                             img={fire}
                             text="Popular"
@@ -222,7 +222,7 @@ export default function Section2() {
                     </div>
                 </div>
                 <div>
-                    <div className="w-52 h-60 rounded-2xl bg-[url('./img/home2.svg')] flex justify-start bg-cover items-end p-2">
+                    <div className="w-96 h-96 md:w-52 md:h-60 rounded-2xl bg-[url('./img/home2.svg')] flex justify-start bg-cover items-end p-2">
                         <Buttonhouter
                             img={homeblue}
                             text="New House"
@@ -254,7 +254,7 @@ export default function Section2() {
                     </div>
                 </div>
                 <div>
-                    <div className="w-52 h-60 rounded-2xl bg-[url('./img/home3.svg')] flex justify-start bg-cover items-end p-2">
+                    <div className="w-96 h-96 md:w-52 md:h-60 rounded-2xl bg-[url('./img/home3.svg')] flex justify-start bg-cover items-end p-2">
                         <Buttonhouter
                             img={wallet}
                             text="Best Deals"
@@ -286,7 +286,7 @@ export default function Section2() {
                     </div>
                 </div>
                 <div>
-                    <div className="w-52 h-60 rounded-2xl bg-[url('./img/home4.svg')] flex justify-start bg-cover items-end p-2">
+                    <div className="w-96 h-96 md:w-52 md:h-60 rounded-2xl bg-[url('./img/home4.svg')] flex justify-start bg-cover items-end p-2">
                         <Buttonhouter
                             img={fire}
                             text="Popular"
@@ -318,7 +318,7 @@ export default function Section2() {
                     </div>
                 </div>
                 <div>
-                    <div className="w-52 h-60 rounded-2xl bg-[url('./img/home1.svg')] flex justify-start bg-cover items-end p-2">
+                    <div className="w-96 h-96 md:w-52 md:h-60 rounded-2xl bg-[url('./img/home1.svg')] flex justify-start bg-cover items-end p-2">
                         <Buttonhouter
                             img={fire}
                             text="Popular"
@@ -350,7 +350,7 @@ export default function Section2() {
                     </div>
                 </div>
                 <div>
-                    <div className="w-52 h-60 rounded-2xl bg-[url('./img/home2.svg')] flex justify-start bg-cover items-end p-2">
+                    <div className="w-96 h-96 md:w-52 md:h-60 rounded-2xl bg-[url('./img/home2.svg')] flex justify-start bg-cover items-end p-2">
                         <Buttonhouter
                             img={homeblue}
                             text="New House"
@@ -382,7 +382,7 @@ export default function Section2() {
                     </div>
                 </div>
                 <div>
-                    <div className="w-52 h-60 rounded-2xl bg-[url('./img/home3.svg')] flex justify-start bg-cover items-end p-2">
+                    <div className="w-96 h-96 md:w-52 md:h-60 rounded-2xl bg-[url('./img/home3.svg')] flex justify-start bg-cover items-end p-2">
                         <Buttonhouter
                             img={wallet}
                             text="Best Deals"
@@ -414,7 +414,7 @@ export default function Section2() {
                     </div>
                 </div>
                 <div>
-                    <div className="w-52 h-60 rounded-2xl bg-[url('./img/home4.svg')] flex justify-start bg-cover items-end p-2">
+                    <div className="w-96 h-96 md:w-52 md:h-60 rounded-2xl bg-[url('./img/home4.svg')] flex justify-start bg-cover items-end p-2">
                         <Buttonhouter
                             img={fire}
                             text="Popular"
@@ -446,7 +446,7 @@ export default function Section2() {
                     </div>
                 </div>
                 <div>
-                    <div className="w-52 h-60 rounded-2xl bg-[url('./img/home1.svg')] flex justify-start bg-cover items-end p-2">
+                    <div className="w-96 h-96 md:w-52 md:h-60 rounded-2xl bg-[url('./img/home1.svg')] flex justify-start bg-cover items-end p-2">
                         <Buttonhouter
                             img={fire}
                             text="Popular"
@@ -478,7 +478,7 @@ export default function Section2() {
                     </div>
                 </div>
                 <div>
-                    <div className="w-52 h-60 rounded-2xl bg-[url('./img/home2.svg')] flex justify-start bg-cover items-end p-2">
+                    <div className="w-96 h-96 md:w-52 md:h-60 rounded-2xl bg-[url('./img/home2.svg')] flex justify-start bg-cover items-end p-2">
                         <Buttonhouter
                             img={homeblue}
                             text="New House"
@@ -510,7 +510,7 @@ export default function Section2() {
                     </div>
                 </div>
                 <div>
-                    <div className="w-52 h-60 rounded-2xl bg-[url('./img/home3.svg')] flex justify-start bg-cover items-end p-2">
+                    <div className="w-96 h-96 md:w-52 md:h-60 rounded-2xl bg-[url('./img/home3.svg')] flex justify-start bg-cover items-end p-2">
                         <Buttonhouter
                             img={wallet}
                             text="Best Deals"
@@ -542,7 +542,7 @@ export default function Section2() {
                     </div>
                 </div>
                 <div>
-                    <div className="w-52 h-60 rounded-2xl bg-[url('./img/home4.svg')] flex justify-start bg-cover items-end p-2">
+                    <div className="w-96 h-96 md:w-52 md:h-60 rounded-2xl bg-[url('./img/home4.svg')] flex justify-start bg-cover items-end p-2">
                         <Buttonhouter
                             img={fire}
                             text="Popular"
@@ -574,7 +574,7 @@ export default function Section2() {
                     </div>
                 </div>
                 <div>
-                    <div className="w-52 h-60 rounded-2xl bg-[url('./img/home1.svg')] flex justify-start bg-cover items-end p-2">
+                    <div className="w-96 h-96 md:w-52 md:h-60 rounded-2xl bg-[url('./img/home1.svg')] flex justify-start bg-cover items-end p-2">
                         <Buttonhouter
                             img={fire}
                             text="Popular"
@@ -606,7 +606,7 @@ export default function Section2() {
                     </div>
                 </div>
                 <div>
-                    <div className="w-52 h-60 rounded-2xl bg-[url('./img/home2.svg')] flex justify-start bg-cover items-end p-2">
+                    <div className="w-96 h-96 md:w-52 md:h-60 rounded-2xl bg-[url('./img/home2.svg')] flex justify-start bg-cover items-end p-2">
                         <Buttonhouter
                             img={homeblue}
                             text="New House"
@@ -638,7 +638,7 @@ export default function Section2() {
                     </div>
                 </div>
                 <div>
-                    <div className="w-52 h-60 rounded-2xl bg-[url('./img/home3.svg')] flex justify-start bg-cover items-end p-2">
+                    <div className="w-96 h-96 md:w-52 md:h-60 rounded-2xl bg-[url('./img/home3.svg')] flex justify-start bg-cover items-end p-2">
                         <Buttonhouter
                             img={wallet}
                             text="Best Deals"
@@ -670,7 +670,7 @@ export default function Section2() {
                     </div>
                 </div>
                 <div>
-                    <div className="w-52 h-60 rounded-2xl bg-[url('./img/home4.svg')] flex justify-start bg-cover items-end p-2">
+                    <div className="w-96 h-96 md:w-52 md:h-60 rounded-2xl bg-[url('./img/home4.svg')] flex justify-start bg-cover items-end p-2">
                         <Buttonhouter
                             img={fire}
                             text="Popular"

@@ -8,7 +8,7 @@ import { Buttonhouter, TextHouter } from "./smallcomponent";
 
 function Navbar() {
     return (
-        <div className="fixed bg-white bg-opacity-20 px-20 py-5 right-0 left-0 z-50" id="nav-houter">
+        <div className="md:fixed md:mb-0 mb-5 flex  bg-white bg-opacity-20 px-20 py-5 right-0 left-0 z-50" id="nav-houter">
             <div className="flex items-center justify-between">
                 <div className="flex items-center">
                     <img src={logohouter} className="mr-3" alt="" />
