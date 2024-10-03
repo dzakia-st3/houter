@@ -122,9 +122,9 @@ function MiniSMCard({ img, name, info }: Readonly<MiniSMCardProps>) {
 
 function MiniCardSection5({imgHouse, imgProfil, name, title, info} : Readonly<MiniCardSection5Props>) {
     return (
-        <div className='flex'>
+        <div className='flex flex-col py-3 md:py-0 md:flex-row'>
             <img src={imgHouse} alt="" />
-            <div className='flex-col p-5 space-y-5'>
+            <div className='flex-col p-3 md:p-5 space-y-5'>
                 <div className="flex items-center">
                     <img src={imgProfil} className='w-8 h-8 mr-2' alt="" />
                     <p className="font-lexend text-sm text-gray-500">{name}</p>

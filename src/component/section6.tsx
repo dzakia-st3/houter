@@ -10,9 +10,9 @@ import { Buttonhouter, TextHouter } from '../component/smallcomponent'
 
 export default function Section6() {
     return (
-        <div className='section-6 py-12 w-full p-16'>
-            <div className='bg-gradient-to-r from-[#8ab4fa] via-white to-[#8ab4fa] flex justify-between items-center p-10 rounded-lg'>
-                <div className='flex items-center'>
+        <div className='section-6 md:p-12 w-full px-5'>
+            <div className='bg-gradient-to-r from-[#8ab4fa] via-white to-[#8ab4fa] md:flex md:justify-between md:items-center p-4 md:p-10 rounded-lg'>
+                <div className='hidden md:flex md:items-center'>
                     <div className='space-y-8'>
                         <img src={chair1} alt="" />
                         <img src={profil1} className='w-12 h-12 ml-4' alt="" />
@@ -22,7 +22,7 @@ export default function Section6() {
                         <img src={house6_1} alt="" />
                     </div>
                 </div>
-                <div className="space-y-4 w-2/4">
+                <div className="w-full md:space-y-4 md:w-2/4">
                     <TextHouter
                         text='Subscribe For More Info'
                         fontstyle="font-lexend font-bold text-2xl text-center text-[#1b1c57]"
@@ -47,7 +47,7 @@ export default function Section6() {
                         />
                     </div>
                 </div>
-                <div className='flex items-center'>
+                <div className='hidden md:flex md:items-center'>
                     <div className='space-y-8'>
                         <img src={house6_2} className='mt-20' alt="" />
                         <img src={profil2} className='w-12 h-12 ml-4' alt="" />

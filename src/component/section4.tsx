@@ -16,7 +16,7 @@ export default function Section4() {
         direction: 'vertical',
         loop: true,
 
-        pagination : {
+        pagination: {
             el: '.swiper-pagination'
         },
 
@@ -28,7 +28,7 @@ export default function Section4() {
         scrollbar: {
             el: '.swiper-scrollbar'
         },
-        
+
         modules: [Navigation, Pagination]
     })
 
@@ -40,22 +40,24 @@ export default function Section4() {
         //         <div className="swiper-slide">Slide 3</div>
         //     </div>
         // </div>
-        <div className='section-4 py-12'>
-            <div className='p-10 flex flex-col items-center justify-center'>
-                <img src={line} className='mb-2' alt="" />
-                <TextHouter
-                    text='Ready To Sell'
-                    fontstyle="font-lexend text-base text-[#F59E0B]"
-                />
+        <div className='section-4 md:py-12'>
+            <div className='pb-5 md:p-10 md:pb-0 flex flex-col items-center justify-center'>
+                <div className="flex flex-col-reverse md:flex-col">
+                    <img src={line} className='md:mb-2' alt="" />
+                    <TextHouter
+                        text='See Our Review'
+                        fontstyle="font-lexend text-base text-[#F59E0B]"
+                    />
+                </div>
                 <TextHouter
                     text="What Our User Say About Us"
                     fontstyle="mt-2 font-bold font-lexend text-xl text-[#1b1c57]"
                 />
             </div>
-            <div className='flex items-center space-x-10 overflow-x-auto scroll-container'>
-                <div className='h-[33rem]'>
-                    <div className="relative flex-none w-[55rem] h-96 rounded-xl bg-[url('./img/section4&5_house1.svg')] bg-opacity-75 bg-cover shadow-md shadow-slate-400 p-28">
-                        <div className='absolute bg-white p-10 rounded-lg -bottom-32 right-20 left-20 shadow-md shadow-slate-400'>
+            <div className='flex items-center px-5 space-x-10 overflow-x-auto scroll-container'>
+                <div className='h-[27rem] md:h-[33rem]'>
+                    <div className="relative flex-none w-[20rem] h-72 md:w-[55rem] md:h-96 rounded-xl bg-[url('./img/section4&5_house1.svg')] bg-opacity-75 bg-cover shadow-md shadow-slate-400 p-28">
+                        <div className='absolute bg-white p-5 md:p-10 rounded-lg -bottom-32 right-3 left-3 md:right-20 md:left-20 shadow-md shadow-slate-400'>
                             <TextHouter
                                 text="My house sold out fast!"
                                 fontstyle="font-bold font-lexend text-base text-[#1b1c57]"
@@ -81,9 +83,9 @@ export default function Section4() {
                         </div>
                     </div>
                 </div>
-                <div className='h-[33rem]'>
-                    <div className="relative flex-none w-[55rem] h-96 rounded-xl bg-[url('./img/section4_house2.svg')] bg-cover shadow-md shadow-slate-400 p-28">
-                        <div className='absolute bg-white p-10 rounded-lg -bottom-32 right-20 left-20 shadow-md shadow-slate-400'>
+                <div className='h-[27rem] md:h-[33rem]'>
+                    <div className="relative flex-none w-[20rem] h-72 md:w-[55rem] md:h-96 rounded-xl bg-[url('./img/section4_house2.svg')] bg-cover shadow-md shadow-slate-400 p-28">
+                        <div className='absolute bg-white p-5 md:p-10 rounded-lg -bottom-32 right-3 left-3 md:right-20 md:left-20 shadow-md shadow-slate-400'>
                             <TextHouter
                                 text="Best! I got the house I wanted through Hounter"
                                 fontstyle="font-bold font-lexend text-base text-[#1b1c57]"
@@ -109,9 +111,9 @@ export default function Section4() {
                         </div>
                     </div>
                 </div>
-                <div className='h-[33rem]'>
-                    <div className="relative flex-none w-[55rem] h-96 rounded-xl bg-[url('./img/section4&5_house3.svg')] bg-cover shadow-md shadow-slate-400 p-28">
-                        <div className='absolute bg-white p-10 rounded-lg -bottom-32 right-20 left-20 shadow-md shadow-slate-400'>
+                <div className='h-[27rem] md:h-[33rem]'>
+                    <div className="relative flex-none w-[20rem] h-72 md:w-[55rem] md:h-96 rounded-xl bg-[url('./img/section4&5_house3.svg')] bg-cover shadow-md shadow-slate-400 p-28">
+                        <div className='absolute bg-white p-5 md:p-10 rounded-lg -bottom-32 right-3 left-3 md:right-20 md:left-20 shadow-md shadow-slate-400'>
                             <TextHouter
                                 text="Through the Hounter, I can get a house for my self"
                                 fontstyle="font-bold font-lexend text-base text-[#1b1c57]"

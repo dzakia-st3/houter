@@ -36,30 +36,30 @@ export default function Section1() {
                 <div className='w-4/5 z-10'>
                     <TextHouter
                         text="Find The Place To"
-                        fontstyle="font-bold font-lexend text-4xl text-[#1b1c57]"
+                        fontstyle="font-bold font-lexend text-2xl md:text-4xl text-[#1b1c57]"
                     />
                     <div className="flex mt-2">
                         <TextHouter
                             text="Live"
-                            fontstyle='font-bold font-lexend text-4xl text-[#1b1c57]'
+                            fontstyle='font-bold font-lexend text-2xl md:text-4xl text-[#1b1c57]'
                         />
                         <TextHouter
                             text="Your Dreams"
-                            fontstyle='font-bold font-lexend text-4xl text-white text-stroke-1 mx-3 tracking-widest'
+                            fontstyle='font-bold font-lexend text-2xl md:text-4xl text-white text-stroke-1 mx-3 tracking-widest'
                         />
                     </div>
                     <TextHouter
                         text="Easily Here"
-                        fontstyle="font-bold font-lexend text-4xl text-[#1b1c57] mt-2"
+                        fontstyle="font-bold font-lexend text-2xl md:text-4xl text-[#1b1c57] mt-2"
                     />
                     <TextHouter
                         text="Everything you need about finding your place to live will be here, where it will be easier for you"
-                        fontstyle="font-lexend text-lg mt-4 text-gray-400"
+                        fontstyle="font-lexend text-base md:text-lg mt-4 text-gray-400"
                     />
                     <div className='flex items-center justify-between mt-3 border-solid border-2 border-gray-300 rounded-full p-3'>
                         <div className='flex items-center w-4/5'>
                             <img src={pinpoint} alt="" />
-                            <input type="text" placeholder='Search for the location you want!' className='mx-2 px-2 w-full' />
+                            <input type="text" placeholder='Search for the location you want!' className='text-xs md:text-lg mx-1 md:mx-2 px-1 md:px-2 w-full' />
                         </div>
                         <Buttonhouter
                             img={right}
@@ -74,14 +74,18 @@ export default function Section1() {
 
                     <TextHouter
                         text="Our Partnership"
-                        fontstyle="font-lexend text-lg mt-4 text-gray-400"
+                        fontstyle="font-lexend text-base text-center md:text-left md:text-lg mt-4 text-gray-400"
                     />
 
-                    <div className="flex items-center">
-                        <img src={traveloka} className='mr-2' alt="" />
-                        <img src={tiket} className='mx-2' alt="" />
-                        <img src={airbnb} className='mx-2' alt="" />
-                        <img src={tripad} className='mx-2' alt="" />
+                    <div className="flex flex-col md:flex-row items-center">
+                        <div className="flex">
+                            <img src={traveloka} className='mr-2' alt="" />
+                            <img src={tiket} className='mx-2' alt="" />
+                        </div>
+                        <div className="flex">
+                            <img src={airbnb} className='mx-2' alt="" />
+                            <img src={tripad} className='mx-2' alt="" />
+                        </div>
                     </div>
                 </div>
             </div>

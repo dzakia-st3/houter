@@ -12,15 +12,25 @@ import { Buttonhouter, TextHouter, MiniCardSection5 } from '../component/smallco
 export default function Section5() {
     return (
         <div className='section-5 py-12'>
-            <div className='p-10 flex flex-col space-y-4 items-center justify-center'>
-                <img src={line} alt="" />
+            <div className='p-10 flex flex-col space-y-2 md:space-y-4 items-center justify-center'>
+                <div className="flex flex-col-reverse items-center md:flex-col">
+                    <img src={line} className="h-1" alt="" />
+                    <TextHouter
+                        text='From Our Partnership'
+                        fontstyle="font-lexend text-base md:text-base text-[#F59E0B]"
+                    />
+                    <TextHouter
+                        text='See Tips and Trick'
+                        fontstyle="font-lexend text-base md:text-base text-[#F59E0B]"
+                    />
+                </div>
                 <TextHouter
-                    text='Ready To Sell'
-                    fontstyle="font-lexend text-base text-[#F59E0B]"
+                    text="Find Out More About"
+                    fontstyle="font-bold font-lexend text-xl text-[#1b1c57]"
                 />
                 <TextHouter
-                    text="What Our User Say About Us"
-                    fontstyle="mt-2 font-bold font-lexend text-xl text-[#1b1c57]"
+                    text="Selling and Buying Homes"
+                    fontstyle="font-bold font-lexend text-xl text-[#1b1c57]"
                 />
                 <Buttonhouter
                     img="null"
@@ -32,8 +42,8 @@ export default function Section5() {
                     hovercolor='hover:bg-emerald-400'
                 />
             </div>
-            <div className="flex justify-between px-16">
-                <div className='w-1/2'>
+            <div className="flex flex-col md:flex-row justify-between px-16">
+                <div className='w-full md:w-1/2'>
                     <MiniCardSection5
                         imgHouse={house5_1}
                         imgProfil={profil1}
@@ -74,4 +84,4 @@ export default function Section5() {
             </div>
         </div>
     )
-}
+} 
