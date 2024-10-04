@@ -16,8 +16,8 @@ export default function Section3() {
     return (
         <div className='section-3 flex flex-col md:flex-row items-center md:justify-around py-12'>
             <div className='md:w-1/3 md:p-10'>
-                <div className='flex flex-col-reverse md:flex-row md:space-x-2'>
-                    <img src={line} className="h-1" alt="" />
+                <div className='flex flex-col-reverse md:flex-row md:space-x-2 md:items-center'>
+                    <img src={line} className="h-1 md:w-7" alt="" />
                     <TextHouter
                         text='Ready To Sell'
                         fontstyle="font-lexend text-center md:text-left text-base text-[#F59E0B]"

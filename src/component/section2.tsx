@@ -18,8 +18,8 @@ export default function Section2() {
         <div className='section-2'>
             <div className='flex flex-col items-center justify-center space-y-5 md:flex-row md:justify-around w-full my-12'>
                 <div>
-                    <div className='flex flex-col-reverse space-x-0 md:flex-row md:space-x-2'>
-                        <img src={line} className="h-1" alt="" />
+                    <div className='flex flex-col-reverse space-x-0 md:flex-row md:space-x-2 md:items-center'>
+                        <img src={line} className="h-1 md:w-7" alt="" />
                         <TextHouter
                             text='Our Recomendation'
                             fontstyle="font-lexend text-base text-[#F59E0B]"
