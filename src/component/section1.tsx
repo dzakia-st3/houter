@@ -30,7 +30,7 @@ export default function Section1() {
     ]
 
     return (
-        <div className='section-1 flex justify-center lg:justify-between'>
+        <div className='section-1 pt-28 md:pt-0 flex justify-center lg:justify-between'>
             <div className='flex items-center justify-center'>
                 <div className='absolute bg-[#82FFE8] blur-3xl z-0 h-2/6 w-1/6 -top-16 -left-16 rounded-full'></div>
                 <div className='w-4/5 z-10'>

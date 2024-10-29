@@ -11,13 +11,13 @@ import { Buttonhouter, TextHouter, MiniCardSection5 } from '../component/smallco
 
 export default function Section5() {
     return (
-        <div className='section-5 py-12'>
+        <div className='section-5 py-1'>
             <div className='p-10 flex flex-col space-y-2 md:space-y-4 items-center justify-center'>
-                <div className="flex flex-col-reverse items-center md:flex-col">
+                <div className="flex flex-col-reverse items-center">
                     <img src={line} className="h-1" alt="" />
                     <TextHouter
                         text='From Our Partnership'
-                        fontstyle="font-lexend text-base md:text-base text-[#F59E0B]"
+                        fontstyle="font-lexend md:mb-2 text-base md:text-base text-[#F59E0B]"
                     />
                     <TextHouter
                         text='See Tips and Trick'
@@ -42,7 +42,7 @@ export default function Section5() {
                     hovercolor='hover:bg-emerald-400'
                 />
             </div>
-            <div className="flex flex-col md:flex-row justify-between px-16">
+            <div className="flex flex-col-reverse md:flex-row justify-between px-16">
                 <div className='w-full md:w-1/2'>
                     <MiniCardSection5
                         imgHouse={house5_1}
@@ -66,15 +66,15 @@ export default function Section5() {
                         info="2 min read | 24 Apr 2021"
                     />
                 </div>
-                <div className='space-y-4 w-1/2'>
+                <div className='w-full mb-4 space-y-4 md:mb-0 md:w-1/2'>
                     <img src={house5_4} className='w-full' alt="" />
-                    <div className='flex-col space-y-4 w-4/5'>
+                    <div className='flex-col w-full space-y-4 md:w-4/5'>
                         <div className="flex items-center">
                             <img src={profil2} className='w-8 h-8 mr-2' alt="" />
                             <p className="font-lexend text-sm text-gray-500">Cameron Williamsom</p>
                         </div>
                         <p className="font-bold font-lexend text-base text-[#1b1c57]">The Things We Need To Check When We Want To Buy A House</p>
-                        <p className="font-lexend text-sm text-gray-400">Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house</p>
+                        <p className="hidden md:flex font-lexend text-sm text-gray-400">Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house</p>
                         <div className="flex">
                             <img src={clock} className='mr-2' alt="" />
                             <p className="font-lexend text-sm text-gray-400">8 min read | 25 Apr 2021</p>
