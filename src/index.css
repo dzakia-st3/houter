@@ -10,6 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
@@ -65,4 +66,92 @@ input:focus {
 #navmobile a:hover {
   background-color: #fff;
   color: #047857;
+}
+
+.swipertestimonial {
+  width: 100%;
+  height: auto;
+}
+
+.swiperitem {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes from-left {
+  from {
+    transform: translateX(70px);
+  }
+  to {
+    transform: translateX(-150px);
+  }
+}
+
+@keyframes from-right {
+  from {
+    transform: translateX(-67px);
+  }
+  to {
+    transform: translateX(150px);
+  }
+}
+
+@keyframes from-bottom {
+  from {
+    transform: translateY(30px);
+  }
+  to {
+    transform: translateY(-50px);
+  }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.section-1-1,
+.section-2,
+.section-3,
+.section-4,
+.section-5,
+.section-6 {
+  animation: from-bottom ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timeline: view(y);
+}
+
+@media only screen and (min-width: 768px) {
+  .section-1-1 {
+    animation-name: from-left;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-timeline: view(y);
+  }
+
+  .section-1-2 {
+    animation-name: from-right;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-timeline: view(y);
+  }
+
+  .swiperitem .swiper-wrapper {
+    padding-left: 0;
+  }
+}
+
+.swiperitem .swiper-wrapper {
+  padding-left: 3%;
 }

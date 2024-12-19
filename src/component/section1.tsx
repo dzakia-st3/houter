@@ -12,6 +12,8 @@ import profil3 from '../img/hero-1c.png'
 import houseprof from '../img/hero-2.svg'
 import profil4 from '../img/hero-3.png'
 import { Buttonhouter, TextHouter, MiniCard } from '../component/smallcomponent'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css'
 
 export default function Section1() {
     let dataimage1 = [
@@ -31,7 +33,7 @@ export default function Section1() {
 
     return (
         <div className='section-1 pt-28 md:pt-0 flex justify-center lg:justify-between'>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center pt-20 md:pt-0 section-1-1'>
                 <div className='absolute bg-[#82FFE8] blur-3xl z-0 h-2/6 w-1/6 -top-16 -left-16 rounded-full'></div>
                 <div className='w-4/5 z-10'>
                     <TextHouter
@@ -89,7 +91,7 @@ export default function Section1() {
                     </div>
                 </div>
             </div>
-            <div className='hidden lg:flex'>
+            <div className='hidden lg:flex section-1-2'>
                 <div className='relative'>
                     <img src={imghero} alt="" />
                     <div>

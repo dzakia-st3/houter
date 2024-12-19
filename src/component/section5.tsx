@@ -73,7 +73,7 @@ export default function Section5() {
                             <img src={profil2} className='w-8 h-8 mr-2' alt="" />
                             <p className="font-lexend text-sm text-gray-500">Cameron Williamsom</p>
                         </div>
-                        <p className="font-bold font-lexend text-base text-[#1b1c57]">The Things We Need To Check When We Want To Buy A House</p>
+                        <p className="font-bold font-lexend text-base text-[#1b1c57] cursor-pointer hover:underline">The Things We Need To Check When We Want To Buy A House</p>
                         <p className="hidden md:flex font-lexend text-sm text-gray-400">Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house</p>
                         <div className="flex">
                             <img src={clock} className='mr-2' alt="" />

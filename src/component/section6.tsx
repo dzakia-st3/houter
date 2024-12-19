@@ -32,7 +32,7 @@ export default function Section6() {
                         fontstyle="font-lexend py-2 md:py-0 font-bold text-base md:text-2xl text-center text-[#1b1c57]"
                     />
                     <div className='flex items-center justify-between p-2 w-full border-solid border-2 border-gray-400 rounded-full mb-2 md:mb-0'>
-                        <div className='flex items-center'>
+                        <div className='flex items-center w-full'>
                             <img src={email} alt="" />
                             <input type="text" placeholder='Your email here' className='mx-2 px-2 w-full' />
                         </div>

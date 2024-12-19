@@ -95,7 +95,7 @@ function Navbar() {
 
 function Footer() {
     return (
-        <div className="flex justify-between items-start p-8 md:p-16">
+        <div className="flex justify-between items-start p-8 md:p-16 footer">
             <div className="space-y-4 w-full md:w-1/3">
                 <div className="flex items-center">
                     <img src={logohouter} className="mr-3" alt="" />

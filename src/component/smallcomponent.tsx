@@ -12,35 +12,20 @@ interface ButtonProps {
     // onclick: (() => {})
 }
 
-interface TextProps {
-    text: string;
-    fontstyle: string
+interface Props {
+    text?: string;
+    fontstyle?: string
+    listimageandstyle?: Array<Object>;
+    texttop?: string;
+    textbottom?: string;
+    img?: string;
+    name?: string;
+    info?: string;
+    imgHouse?: string;
+    imgProfil?: string;
+    title?: string;
 }
 
-interface MiniCardProps {
-    listimageandstyle: Array<Object>;
-    texttop: string;
-    textbottom: string;
-}
-
-interface MiniLGCardProps {
-    img: string;
-    text: string;
-}
-
-interface MiniSMCardProps {
-    img: string;
-    name: string;
-    info: string;
-}
-
-interface MiniCardSection5Props {
-    imgHouse: string;
-    imgProfil: string;
-    name: string; 
-    title: string;
-    info: string;
-}
 
 function Buttonhouter({ img, text, disabled, iconPosition, textColor, bakcgroundColor, hovercolor }: Readonly<ButtonProps>) {
     let ComponentInside;
@@ -63,26 +48,26 @@ function Buttonhouter({ img, text, disabled, iconPosition, textColor, bakcground
             </>
     }
 
-    let styling = `flex justify-between text-sm border-2 border-gray-200 ${bakcgroundColor === '' ? '' : bakcgroundColor} ${textColor} p-2 rounded-full ${hovercolor}`
+    let styling = `flex justify-between text-sm border-2 border-gray-200 cursor-pointer ${bakcgroundColor === '' ? '' : bakcgroundColor} ${textColor} p-2 rounded-full ${hovercolor}`
 
     return (
         <div className={styling}>{ComponentInside}</div>
     )
 }
 
-function TextHouter({ text, fontstyle }: Readonly<TextProps>) {
+function TextHouter({ text, fontstyle }: Readonly<Props>) {
     return (
         <p className={`${fontstyle}`}>{text}</p>
     )
 }
 
-function MiniCard({ listimageandstyle, texttop, textbottom }: Readonly<MiniCardProps>) {
+function MiniCard({ listimageandstyle, texttop, textbottom }: Readonly<Props>) {
     return (
         <div className="flex-none">
             <div className="flex items-center justify-center bg-white rounded-3xl p-4 h-24">
                 <div className='flex mr-2'>
                     {
-                        listimageandstyle.map((item: any, idx: number) => <img key={idx + 1} src={`${item.img}`} className={item.style} alt="" />)
+                        listimageandstyle && listimageandstyle.length != 0 ? (listimageandstyle.map((item: any, idx: number) => <img key={idx + 1} src={`${item.img}`} className={item.style} alt="" />)) : ''
                     }
                 </div>
                 <div className=''>
@@ -94,7 +79,7 @@ function MiniCard({ listimageandstyle, texttop, textbottom }: Readonly<MiniCardP
     )
 }
 
-function MiniLGCard({ img, text }: Readonly<MiniLGCardProps>) {
+function MiniLGCard({ img, text }: Readonly<Props>) {
     return (
         <div className='flex items-center p-2'>
             <img src={img} className='mr-2' alt="" />
@@ -106,7 +91,7 @@ function MiniLGCard({ img, text }: Readonly<MiniLGCardProps>) {
     )
 }
 
-function MiniSMCard({ img, name, info }: Readonly<MiniSMCardProps>) {
+function MiniSMCard({ img, name, info }: Readonly<Props>) {
     return (
         <div className="flex space-x-2 items-center">
             <div className='flex'>
@@ -120,7 +105,7 @@ function MiniSMCard({ img, name, info }: Readonly<MiniSMCardProps>) {
     )
 }
 
-function MiniCardSection5({imgHouse, imgProfil, name, title, info} : Readonly<MiniCardSection5Props>) {
+function MiniCardSection5({ imgHouse, imgProfil, name, title, info }: Readonly<Props>) {
     return (
         <div className='flex flex-col py-3 md:py-0 md:flex-row'>
             <img src={imgHouse} alt="" />
@@ -129,7 +114,7 @@ function MiniCardSection5({imgHouse, imgProfil, name, title, info} : Readonly<Mi
                     <img src={imgProfil} className='w-8 h-8 mr-2' alt="" />
                     <p className="font-lexend text-sm text-gray-500">{name}</p>
                 </div>
-                <p className="font-bold font-lexend text-base text-[#1b1c57]">{title}</p>
+                <p className="font-bold font-lexend text-base text-[#1b1c57] cursor-pointer hover:underline">{title}</p>
                 <div className="flex">
                     <img src={clock} className='mr-2' alt="" />
                     <p className="font-lexend text-sm text-gray-400">{info}</p>
@@ -139,4 +124,4 @@ function MiniCardSection5({imgHouse, imgProfil, name, title, info} : Readonly<Mi
     )
 }
 
-export { Buttonhouter, TextHouter, MiniCard, MiniLGCard, MiniSMCard, MiniCardSection5}
+export { Buttonhouter, TextHouter, MiniCard, MiniLGCard, MiniSMCard, MiniCardSection5 }

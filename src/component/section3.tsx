@@ -15,7 +15,7 @@ import { Buttonhouter, TextHouter, MiniLGCard, MiniSMCard } from '../component/s
 export default function Section3() {
     return (
         <div className='section-3 flex flex-col md:flex-row items-center md:justify-around py-12'>
-            <div className='md:w-1/3 md:p-10'>
+            <div className='md:w-1/3 md:p-10 section-3-1'>
                 <div className='flex flex-col-reverse md:flex-row md:space-x-2 md:items-center'>
                     <img src={line} className="h-1 md:w-7" alt="" />
                     <TextHouter
@@ -85,7 +85,7 @@ export default function Section3() {
                     />
                 </div>
             </div>
-            <div className='relative'>
+            <div className='relative section-3-2'>
                 <div className="w-60 h-60 md:w-96 md:h-96 rounded-xl bg-[url('./img/section3_house.svg')] flex justify-center bg-cover items-center p-2">
                     <img src={playbtn} alt="" />
                 </div>
