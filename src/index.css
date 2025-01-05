@@ -114,7 +114,7 @@ input:focus {
   }
 }
 
-.section-1-1,
+/* .section-1-1,
 .section-2,
 .section-3,
 .section-4,
@@ -124,7 +124,7 @@ input:focus {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-timeline: view(y);
-}
+} */
 
 @media only screen and (min-width: 768px) {
   .section-1-1 {
