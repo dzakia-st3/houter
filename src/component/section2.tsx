@@ -20,7 +20,7 @@ import 'swiper/css/navigation'
 
 export default function Section2() {
     return (
-        <div className='section-2'>
+        <div data-aos='fade-up' data-aos-duration="1000" data-aos-delay="200" className='section-2' id="property">
             <div className='flex flex-col items-center justify-center space-y-5 md:flex-row md:justify-around w-full my-12'>
                 <div>
                     <div className='flex flex-col-reverse space-x-0 md:flex-row md:space-x-2 md:items-center'>

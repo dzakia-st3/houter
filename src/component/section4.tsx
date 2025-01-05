@@ -12,7 +12,7 @@ import { TextHouter, MiniSMCard } from '../component/smallcomponent'
 
 export default function Section4() {
     return (
-        <div className='section-4 md:py-12'>
+        <div data-aos='fade-up' data-aos-duration="1000" data-aos-delay="200" className='section-4 md:py-12'>
             <div className='pb-5 md:p-10 md:pb-0 flex flex-col items-center justify-center'>
                 <div className="flex flex-col-reverse">
                     <img src={line} className='' alt="" />

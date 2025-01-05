@@ -2,14 +2,14 @@ import React from "react";
 import clock from "../img/clock.svg"
 
 interface ButtonProps {
-    img: string;
-    text: string;
-    disabled: boolean;
+    img?: string;
+    text?: string;
+    disabled?: boolean;
     iconPosition: string;
-    textColor: string;
-    bakcgroundColor: string;
-    hovercolor: string;
-    // onclick: (() => {})
+    textColor?: string;
+    bakcgroundColor?: string;
+    hovercolor?: string;
+    onclick?: any;
 }
 
 interface Props {
@@ -27,7 +27,7 @@ interface Props {
 }
 
 
-function Buttonhouter({ img, text, disabled, iconPosition, textColor, bakcgroundColor, hovercolor }: Readonly<ButtonProps>) {
+function Buttonhouter({ img, text, disabled, iconPosition, textColor, bakcgroundColor, hovercolor, onclick }: Readonly<ButtonProps>) {
     let ComponentInside;
 
     if (img === 'null') {
@@ -51,7 +51,7 @@ function Buttonhouter({ img, text, disabled, iconPosition, textColor, bakcground
     let styling = `flex justify-between text-sm border-2 border-gray-200 cursor-pointer ${bakcgroundColor === '' ? '' : bakcgroundColor} ${textColor} p-2 rounded-full ${hovercolor}`
 
     return (
-        <div className={styling}>{ComponentInside}</div>
+        <div className={styling} onClick={onclick}>{ComponentInside}</div>
     )
 }
 

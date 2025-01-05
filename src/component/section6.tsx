@@ -10,7 +10,7 @@ import { Buttonhouter, TextHouter } from '../component/smallcomponent'
 
 export default function Section6() {
     return (
-        <div className='section-6 md:p-12 w-full px-5'>
+        <div data-aos='fade-up' data-aos-duration="1000" data-aos-delay="200" className='section-6 md:p-12 w-full px-5'>
             <div className='bg-gradient-to-r from-[#8ab4fa] via-white to-[#8ab4fa] md:flex md:justify-between md:items-center p-4 md:p-10 rounded-lg'>
                 <div className='hidden md:flex md:items-center'>
                     <div className='space-y-8'>

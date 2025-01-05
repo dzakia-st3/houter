@@ -11,7 +11,7 @@ import { Buttonhouter, TextHouter, MiniCardSection5 } from '../component/smallco
 
 export default function Section5() {
     return (
-        <div className='section-5 py-1'>
+        <div data-aos='fade-up' data-aos-duration="1000" data-aos-delay="200" className='section-5 py-1' id="article">
             <div className='p-10 flex flex-col space-y-2 md:space-y-4 items-center justify-center'>
                 <div className="flex flex-col-reverse items-center">
                     <img src={line} className="h-1" alt="" />

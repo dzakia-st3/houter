@@ -33,7 +33,11 @@ function Navbar() {
         <div className="flex">
             <div className={navbarcolor ? "fixed md:mb-0 mb-5 bg-[#1b1c57] bg-opacity-85 md:px-20 px-9 py-7 w-full z-50 shadow-md" : "fixed md:mb-0 mb-5 bg-white bg-opacity-20 md:px-20 px-9 py-7 w-full z-50 shadow-md"} id="nav-houter">
                 <div className="flex items-center justify-between">
-                    <div className="md:flex md:items-center">
+                    <div className="md:flex md:items-center" onClick={() => {
+                        document.getElementById("home")?.scrollIntoView({
+                            behavior: "smooth"
+                        })
+                    }}>
                         <img src={logohouter} className="mr-3" alt="" />
                         <TextHouter
                             text="Hounter"
@@ -43,12 +47,17 @@ function Navbar() {
                     <div className="hidden md:flex">
                         <Buttonhouter
                             img="null"
-                            text="About Us"
+                            text="Home"
                             disabled={false}
                             iconPosition=""
                             textColor="text-white"
                             bakcgroundColor='bg-transparent mr-4'
                             hovercolor='hover:underline'
+                            onclick={() => {
+                                document.getElementById("home")?.scrollIntoView({
+                                    behavior: "smooth"
+                                })
+                            }}
                         />
                         <Buttonhouter
                             img="null"
@@ -58,17 +67,27 @@ function Navbar() {
                             textColor="text-white"
                             bakcgroundColor='bg-transparent mr-4'
                             hovercolor='hover:underline'
+                            onclick={() => {
+                                document.getElementById("article")?.scrollIntoView({
+                                    behavior: "smooth"
+                                })
+                            }}
                         />
                         <Buttonhouter
-                            img={down}
+                            img="null"
                             text="Property"
                             disabled={false}
-                            iconPosition="right"
+                            iconPosition=""
                             textColor="text-white"
                             bakcgroundColor='bg-transparent mr-4'
                             hovercolor='hover:underline'
+                            onclick={() => {
+                                document.getElementById("property")?.scrollIntoView({
+                                    behavior: "smooth"
+                                })
+                            }}
                         />
-                        <Buttonhouter
+                        {/* <Buttonhouter
                             img="null"
                             text="Sign Up!"
                             disabled={false}
@@ -76,7 +95,7 @@ function Navbar() {
                             textColor="ml-5 font-bold text-[#047857]"
                             bakcgroundColor='bg-[#D1FAE5]'
                             hovercolor='hover:bg-emerald-300'
-                        />
+                        /> */}
                     </div>
                     <a href="javascript:void(0);" onClick={HamburgerMenuOnClick} className={navbarcolor ? "text-white md:hidden" : "md:hidden"} >
                         <i className="fa fa-bars"></i>
@@ -84,10 +103,10 @@ function Navbar() {
                 </div>
             </div>
             <div className={menuNavMobile ? "z-20 fixed w-full flex flex-col mt-24 py-3 bg-[#1b1c57] bg-opacity-90 text-white text-center" : "hidden"}>
-                <a href="#" className="p-3 hover:underline" >About Us</a>
-                <a href="#" className="p-3 hover:underline" >Article</a>
-                <a href="#" className="p-3 hover:underline" >Property</a>
-                <a href="#" className="p-3 hover:underline" >Sign Up</a>
+                <a href="#home" className="p-3 hover:underline" >Home</a>
+                <a href="#article" className="p-3 hover:underline" >Article</a>
+                <a href="#property" className="p-3 hover:underline" >Property</a>
+                {/* <a href="#" className="p-3 hover:underline" >Sign Up</a> */}
             </div>
         </div>
     )
@@ -95,7 +114,7 @@ function Navbar() {
 
 function Footer() {
     return (
-        <div className="flex justify-between items-start p-8 md:p-16 footer">
+        <div data-aos='fade-up' data-aos-duration="1000" data-aos-delay="200" className="flex justify-between items-start p-8 md:p-16 footer">
             <div className="space-y-4 w-full md:w-1/3">
                 <div className="flex items-center">
                     <img src={logohouter} className="mr-3" alt="" />
