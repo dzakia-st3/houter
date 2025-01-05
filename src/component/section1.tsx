@@ -1,5 +1,5 @@
 import React from "react";
-import imghero from '../img/img_hero.svg'
+import imghero from '../img/imghero.svg'
 import pinpoint from '../img/pinpoint.svg'
 import right from '../img/right.svg'
 import traveloka from '../img/traveloka_logo.svg'
